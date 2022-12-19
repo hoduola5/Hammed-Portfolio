@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+.page-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#work-section {
+  margin: 0px 5%;
+  display: grid;
+  min-height: 500px;
+  height: 70vh;
+  border: 2px solid black;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 25% 25% 25% 25%;
+  grid-template-areas: 
+      "prework prework"
+      "prework prework"
+      "landingPage todoApp"
+      "portfolio contactPage"
+      ;
+}
+#prework {
+  grid-area: prework;
+  border: 1px solid red;
+}
+#landingPage {
+  grid-area: landingPage;
+  border: 1px solid red;
+}
+#todoApp {
+  grid-area: todoApp;
+  border: 1px solid red;
+}
+#portfolio {
+  grid-area: portfolio;
+  border: 1px solid red;
+}
+#contactPage {
+  grid-area: contactPage;
+  border: 1px solid red;
+}
