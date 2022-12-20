@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+h1 {
+  /* margin-left: 10px;
+  margin-right: -20px;
+  padding-right: 0px; */
+  border-right: 3px solid gray;
+  border-left: 0px;
+  border-top: 0px;
+  border-bottom: 0px;
+  text-align: center;
+}
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+}
+ul li {
+  display: inline;
+}
+p {
+  margin: 0;
+}
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: flex-end;
+}
+article p {
+  /* border: 1px solid green;
+  margin-right: 52px; */
+}
+.page-section {
+  display: flex;
+  /* min-height: 100vh; */
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+/* .page-section */
+#work-section {
+  margin: 0px 5%;
+  display: grid;
+  min-height: 500px;
+  min-width: 500px;
+  height: 70vh;
+  border: 2px solid black;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 25% 25% 25% 25%;
+  grid-template-areas: 
+      "prework prework"
+      "prework prework"
+      "landingPage todoApp"
+      "portfolio contactPage"
+      ;
+}
+#prework {
+  margin: 5px;
+  grid-area: prework;
+  border: 1px solid red;
+  background-image: url("../images/02-run-buddy.jpg");
+}
+#landingPage {
+  margin: 5px;
+  grid-area: landingPage;
+  border: 1px solid red;
+  background-image: url("../images/02-hero-bg.jpg");
+}
+#todoApp {
+  margin: 5px;
+  grid-area: todoApp;
+  border: 1px solid red;
+  background-image: url("../images/02-portfolio-2.jpg");
+}
+#portfolio {
+  margin: 5px;
+  grid-area: portfolio;
+  border: 1px solid red;
+  background-image: url("../images/02-portfolio-3.jpg");
+}
+#contactPage {
+  margin: 5px;
+  grid-area: contactPage;
+  border: 1px solid red;
+  background-image: url("../images/02-portfolio-4.jpg");
+}
+#work-section div h2 {
+  background-color: rgb(53, 172, 172);
+  display: inline-block;
+  float: left;
+}
+#prework h2 {
+  margin-top: 190px;
+}
+#landingPage h2 {
+  margin-top: 40px;
+}
+#todoApp h2 {
+  margin-top: 60px;
+}
+#portfolio h2 {
+  margin-top: 60px;
+}
+#contactPage h2 {
+  margin-top: 40px;
+}
+#contact ul  {
+  border: 1px solid blue;
+}
+#contact ul li {
+  /* margin-left: 0px;
+  margin-right: 38px; */
+}
