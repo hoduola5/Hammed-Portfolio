@@ -58,10 +58,7 @@ nav ul li a {
   margin-left: 30vw;
 }
 .work-section{
-  /* margin-top: 40px;
-  margin-bottom: 40px; */
-  /* height: 90vh; */
-  /* width: 500px; */
+  /* margin-right: 10px; */
 }
 .paraDiv{
   margin: 10px;
@@ -113,14 +110,17 @@ img {
 #successPage {
   grid-area: successPage;
 }
-.vertical-Line4 {
-  margin-left: -50px;
-}
 .h2Div {
-  padding-right: 20px;
+  padding-right: 10px;
+}
+.footer-section {
+  margin-left: 340px;
 }
 footer .h2Div {
-  padding-right: 40px;
+  padding-right: 50px;
+}
+footer .h2Div h2 {
+  /* padding-right: 20px; */
 }
 .footer-link {
   display: flex;  
@@ -128,7 +128,13 @@ footer .h2Div {
   gap: 40px;
   /* padding: 30px; */
 }
-.footer-link-container {
-  border: 1px solid green;
-  margin-right: 200px;
+.vertical-Line4 {
+  margin-left: -50px;
 }
+.footer-link-container {
+  margin-right: 150px;
+}
+
+/* <br> <span> <br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br>
+</span> */
