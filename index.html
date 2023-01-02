@@ -12,97 +12,138 @@
 <body>
   <!-- main logo / nav -->
   <header>
-    <h1>Hammed</h1>
-    <img src="./images/02-hero-bg.jpg" alt="Hammed Profile Picture" style="height: 200px; width: 100vw; ">
-    <nav>
-      <ul>
-        <li><a href="#">01-Mini-Landing-Page</a></li>
-        <li><a href="#prework">Prework-Study-Guide</a></li>
-        <li><a href="#landingPage">Login Page</a></li>
-        <li><a href="#todoApp">Registration Form</a></li>
-        <li><a href="#portfolio">Success Page</a></li>
-        <li><a href="#contactPage">Contact page</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- hero banner -->
-  <section class="hero-banner">
-    <div>
-      <h2>Landing Page</h2>
-      <img src="./images/portfolio-img.jpg" alt="landing page" style="width: 200px; width: 200px;">
-    </div>
-  </section>
-
-  <main class="page-wrapper">
-    <!-- about me -->
-    <section class="page-section" id="about">
-      <div id="aboutMe">
-        <h1>About</h1>
-        <h1>Me</h1>
-        <!-- <h1>Me</h1> -->
-      </div>
-      <article class="sub-section">
-        <p>
-          Hammed is a young professional hardworking trainee web developer
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime rem aliquid eveniet nihil,<br> 
-          ipsum vitae itaque esse libero, perferendis, minus deserunt amet! Deserunt dolor nostrum <br>
-          provident dicta adipisci veniam praesentium iste fugiat nisi reprehenderit a vel, quam ullam <br>
-          quos. Dolor quaerat adipisci aliquam sunt excepturi magnam. Velit beatae assumenda perferendis!
-        </p>
-      </article>
-    </section>
-
-    <!-- portfolio container -->
-    <section class="page-section" id="worke">
-      <section id="work">
-        <h1>Work</h1>
-      </section>
-      <section class="sub-section" id="work-section">
-        <div id="prework">
-          <a href="https://hoduola5.github.io/prework-study-guide/">
-            <img src="./images/prework.png" alt="prework-study-guide" style="width: 494px; height: 190px; " id="prework" >
-          </a>
-          <h2>prework-study-guide</h2>
-        </div>
-        <div id="loginPage">
-          <a href="https://hoduola5.github.io/login-page/">
-          <img src="./images/login-page.png" alt="Login-Page" style="width: 200px; height: 100px; ">
-          </a>
-          <h2>Login Page</h2>
-        </div>
-        <div id="regForm">
-          <img src="./images/reg-form.png" alt="Registration page" style="width: 200px; height: 100px; " >
-          <h2>Registration Form</h2>
-        </div>
-        <div id="successPage" >
-          <img src="./images/success-page.png" alt="Success Page" style="width: 200px; height: 100px; ">
-          <h2>Success Page</h2>
-        </div>
-        <div id="contactPage">
-          <img src="#" alt="contact page">
-          <h2>Contact Page</h2>
-        </div>
-      </section>
-    </section>
-
-    <!-- contact -->
-    <section class="page-section contact" id="contact">
-      <div>
-        <h1>Contact <br> Me</h1>
-      </div>
-      <div>
+    <nav id="nav-container">
+      <h1>Hammed</h1>
+      <div id="nav-list">
         <ul>
-          <li>Contact Me</li>
-          <li>About Me</li>
-          <li>My Projects</li>
-          <li>My Work</li>
+          <li><a href="#refactorHariseon">Refactor Hariseon Codebase</a></li>
+          <li><a href="#landingPage">01-Mini-Landing-Page</a></li>
+          <li><a href="#prework">Prework-Study-Guide</a></li>
+          <li><a href="#loginPage">Login Page</a></li>
+          <li><a href="#successPage">Success Page</a></li>
         </ul>
       </div>
+    </nav>
+    <!-- <img src="./images/02-hero-bg.jpg" alt="Hammed Profile Picture" style="height: 200px; width: 100vw; "> -->
+  </header>
+  <main>
+    <div class="" id="main-profile">
+      <!-- <div class="profile"> -->
+      <div class="imgDiv">
+        <img src="./images/portfolio-img.jpg" alt="" style="width: 300px; height: 300px;">
+      </div>
+      <div class="h1Div">
+        <h1 class="" id="title">Hammed Boostrap Portfolio</h1>
+      </div>
+      <!-- </div> -->
+      <hr class="vertical-Line1">
+    </div>
+    <section class="about-section">
+      <!-- <div class="aboutMeDiv"> -->
+        <div class="h2Div">
+          <h2>About <br> <span id="me1">Me</span></h2>
+        </div>
+        <hr class="vertical-Line2">
+        <div class="paraDiv">
+          <p class="lead">Hammed is a young professional ATM Engineer that is trying to change profession into
+            a web
+            developer.</p>
+          <p>Due to my person for web development role, I have to join Edx/Trilogy Bootcamp for frontend web
+            development so as to be fit for a remote job after my training.</p>
+        </div>
+      <!-- </div> -->
     </section>
+    <section class="work-section">
+      <!-- <div class="workDiv"> -->
+        <div class="h2Div">
+          <h2>Work</h2>
+        </div>
+        <hr class="vertical-Line3">
+        <div class="grid-container" id="grid-container">
+          <div class="imgDiv" id="refactorHariseon">
+            <a href="https://hoduola5.github.io/Refactor-Hariseon-Codebase/">
+              <img src="./images/Refactor-Hariseon.png" class="" alt="Refactor Hariseon Codebase">
+            </a>
+            <div class="">
+              <h5 class="">Refactor Hariseon Codebase</h5>
+            </div>
+          </div>
+          <div class="imgDiv" id="landingPage">
+            <a href="https://hoduola5.github.io/01-Mini-Project-Landing-Page/">
+              <img src="./images/Mini-landing-page.png" class="" alt="Mini-Project-Landing-Page">
+            </a>
+            <div class="">
+              <h5 class="">Mini Project Landing Page</h5>
+            </div>
+          </div>
+          <div class="imgDiv" id="prework">
+            <a href="https://hoduola5.github.io/prework-study-guide/">
+              <img src="./images/prework.png" class="" alt="Prework Study Guide">
+            </a>
+            <div class="">
+              <h5 class="">Prework Study Guide</h5>
+            </div>
+          </div>
+          <div class="imgDiv" id="loginPage">
+            <a href="https://hoduola5.github.io/01-Mini-Project-Landing-Page/">
+              <img src="./images/login-page.png" class="" alt="Login Page">
+            </a>
+            <div class="">
+              <h5 class="">Login Page</h5>
+            </div>
+          </div>
+          <div class="imgDiv" id="successPage">
+            <a href="https://hoduola5.github.io/prework-study-guide/">
+              <img src="./images/success-page.png" class="" alt="Success Page">
+            </a>
+            <div class="">
+              <h5 class="">Succes Page</h5>
+            </div>
+          </div>
+        </div>
+      <!-- </div> -->
+      </div>
+    </section>
+    <footer class="footer-section">
+      <!-- <div class="footer-container"> -->
+        <!-- <div class=""> -->
+          <div class="h2Div">
+            <h2>Contact <br> <span id="me2">Me</span></h2>
+          </div>
+          <!-- <div class="col-lg-3">
+                <p>Copyright Hammed Oduola 2022</p>
+            </div> -->
+
+          <hr class="vertical-Line4">
+          <div class="footer-link-container">
+            <div class="footer-link">
+              <div class="">
+                <a href="#">
+                  <p>07513676913</p>
+                </a>
+              </div>
+              <div class="">
+                <a href="#">
+                  <p>email</p>
+                </a>
+              </div>
+              <div class="">
+                <a href="http://twitter/oduolaabdulham2">
+                  <p>Twitter</p>
+                </a>
+              </div>
+              <div class="">
+                <a href="#">
+                  <p>GitHub</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        <!-- </div> -->
+      <!-- </div> -->
+    </footer>
   </main>
+
 </body>
 
 </html>

@@ -7,6 +7,8 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 h1,
@@ -17,146 +19,116 @@ h5,
 h6 {
   margin: 0;
 }
-ul {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 30px;
-}
 header {
   background-color: black;
 }
-header img {
-  margin-top: 50px;
-}
-header h1 {
-  position: absolute;
-  background-color: aquamarine;
-  padding-left: 30px;
-}
-nav ul {
-  position: absolute;
-  top: 10px;
-  right: 5px;
-  right: 30px;
-}
-nav ul li a {
-  display: inline;
-  color: aquamarine;
-}
-p {
-  margin: 0;
-}
-.hero-banner h2 {
-  position: absolute;
-  top: 180px;
-  right: 40px;
-  background-color: aquamarine;
-}
-.page-wrapper {
+#nav-container {
   display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
-article p {
-  /* border: 1px solid green;
-  margin-right: 52px; */
+nav h1 {
+  background-color: rgb(114, 214, 239);
+  padding-left: 40px;
+  padding-right: 5px;
 }
-#about {
+nav ul li {
+  display: inline;
+  padding: 10px;
+}
+nav ul li a {
+  color: rgb(114, 214, 239);
+}
+#main-profile {
+  background-image: url(../images/02-portfolio-4.jpg);
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  margin-left: 210px;
+  /* justify-content: space-evenly; */
+  gap: 30px;
+  align-items: center;
 }
-#worke {
+.about-section, .work-section, .footer-section {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  justify-content: center;
+  justify-content: flex-end;
+  width: 60%;
+  height: 40%;
+  margin-top: 40px;
 }
-.page-section {
+.about-section, .work-section, .footer-section {
+  margin-left: 30vw;
 }
-
-/* .page-section */
-#work-section {
-  margin: 0px 5%;
-  display: grid;
-  min-height: 500px;
-  min-width: 500px;
-  height: 70vh;
+.work-section{
+  /* margin-top: 40px;
+  margin-bottom: 40px; */
+  /* height: 90vh; */
+  /* width: 500px; */
+}
+.paraDiv{
+  margin: 10px;
+}
+.imgDiv {
+  margin: 5px;
+  border: 2px solid rgb(114, 214, 239);
+  position: relative;
+}
+.vertical-Line1, .vertical-Line2,
+.vertical-Line3, .vertical-Line4 {
   border: 2px solid black;
-  grid-template-columns: 50% 50%;
+}
+.vertical-Line2 {
+  margin-left: -8px;
+}
+h5 {
+  position: absolute;
+  background-color: rgb(114, 214, 239);
+  bottom: 10px;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+.grid-container {
+  display: grid;
   grid-template-rows: 25% 25% 25% 25%;
-  grid-template-areas: 
-      "prework prework"
-      "prework prework"
-      "loginPage regForm"
-      "successPage contactPage"
-      ;
+  grid-template-columns: 50% 50%;
+  grid-template-areas:
+    "refactorHariseon refactorHariseon"
+    "refactorHariseon refactorHariseon"
+    "landingPage prework"
+    "loginPage successPage"
+    ;
+}
+#refactorHariseon {
+  grid-area: refactorHariseon;
+}
+#landingPage {
+  grid-area: landingPage;
 }
 #prework {
-  margin: 5px;
   grid-area: prework;
-  border: 1px solid red;
-  background-image: url("../images/02-run-buddy.jpg");
 }
 #loginPage {
-  /* margin: 5px;
-  grid-area: landingPage;
-  border: 1px solid red; */
-  background-image: url("../images/02-portfolio-1.jpg");
-}
-#regForm {
-  /* margin: 5px;
-  grid-area: todoApp;
-  border: 1px solid red; */
-  background-image: url("../images/02-portfolio-2.jpg");
+  grid-area: loginPage;
 }
 #successPage {
-  /* margin: 5px;
-  grid-area: portfolio;
-  border: 1px solid red; */
-  background-image: url("../images/02-portfolio-3.jpg");
+  grid-area: successPage;
 }
-#work-section div h2 {
-  background-color: rgb(53, 172, 172);
-  display: inline-block;
-  /* float: left; */
+.vertical-Line4 {
+  margin-left: -50px;
 }
-#prework h2 {
-  margin-top: 190px;
+.h2Div {
+  padding-right: 20px;
 }
-#loginPage h2 {
-  margin-top: 40px;
+footer .h2Div {
+  padding-right: 40px;
 }
-#regForm h2 {
-  margin-top: 60px;
+.footer-link {
+  display: flex;  
+  justify-content: space-around;
+  gap: 40px;
+  /* padding: 30px; */
 }
-#successPage h2 {
-  margin-top: 60px;
-}
-#contactPage h2 {
-  margin-top: 40px;
-}
-#contact {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  /* gap: 30px; */
-  margin-left: -150px;
-}
-#contact ul li {
-  display: inline;
-}
-#contact h1 {
-  margin-right: 0px;
-}
-#worke img {
-  position: absolute;
-  margin-left: 48px;
-  border-left: 20px;
-}
-#worke #prework {
-  margin: 0px;
+.footer-link-container {
+  border: 1px solid green;
+  margin-right: 200px;
 }
